@@ -7,16 +7,16 @@ export default defineConfig({
   base: "/e-plantShopping/",
   esbuild: {
     loader: "jsx",
-    resolve: {
-      alias: {
-        "./runtimeConfig": "./runtimeConfig.browser",
-      },
+  },
+  resolve: {
+    alias: {
+      "./runtimeConfig": "./runtimeConfig.browser",
     },
-    optimizeDeps: {
-      esbuildOptions: {
-        loader: {
-          ".js": "jsx",
-        },
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        ".js": "jsx",
       },
     },
   },
