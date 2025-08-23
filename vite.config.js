@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/e-plantShopping/",
   esbuild: {
+    loader: "jsx",
     resolve: {
       alias: {
         "./runtimeConfig": "./runtimeConfig.browser",
